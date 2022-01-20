@@ -24,6 +24,6 @@ val = firstName.concat(' ', lastName) //Zamzam Saputra
 
 //change case
 val = firstName.toUpperCase() //ZAMZAM
-val = firstName.toLowerCase() //zamzami
+val = firstName.toLowerCase() //zamzam
 
 console.log(val)
