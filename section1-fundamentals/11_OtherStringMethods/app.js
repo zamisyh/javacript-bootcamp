@@ -11,7 +11,7 @@ val = firstName + ' ' + lastName // Zamzam Saputra
 val = 'Zamzam'
 val += 'Saputra'
 // ** result = ZamzamSaputra
-
+ 
 //Escaping
 val = "That's great. that you've very found a job"
 val = 'That\'s great. that you\'ve very found a job'
@@ -24,6 +24,6 @@ val = firstName.concat(' ', lastName) //Zamzam Saputra
 
 //change case
 val = firstName.toUpperCase() //ZAMZAM
-val = firstName.toLowerCase() //zamzam
+val = firstName.toLowerCase() //zamzami
 
 console.log(val)
