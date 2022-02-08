@@ -14,5 +14,5 @@ function drink(){
 message = 'Hallo, my name is ' + name + ', I love drinking ' + dringking;
 message = `Hallo, my name is ${name}, I love dringking ${drink()}` // template literals
 message = 'Hallo, my name is ' + name + ', I love dringking ' 
-            + (age > 18 ? 'beer' : 'tea')
+            + (age > 18 ? 'beer' : 'tea') // with ternary operator
 console.log(message)
