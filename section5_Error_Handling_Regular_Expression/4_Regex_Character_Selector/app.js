@@ -3,6 +3,10 @@ let re;
 re = /n+/g
 re = /ni?/g
 re = /un*/g
+re = /.ee/g
+re = /\./g
+re = /\w/g
+re = /\d/g
 
 
 const result = str.match(re);
