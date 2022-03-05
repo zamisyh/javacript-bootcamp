@@ -9,7 +9,7 @@
 // function getItems(){
 //    return ['Milk', 'Fish', 'Apple']
 // }
-
+const id = user.id;
 // [item1, item2, item3] = getItems();
 // console.log(item2)
 
