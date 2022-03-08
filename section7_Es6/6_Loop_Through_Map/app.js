@@ -38,6 +38,15 @@ for (const user of users.values()) {
    console.log(user['job_title'])
 }
 
-users.forEach(user, key => {
-   console.log(`${key} : ${user}`)
-});
+users.forEach((user, key) => {
+   console.log(`${key}: ${user['job_title']}`)
+})
+
+const pairsArr = Array.from(users);
+console.log(pairsArr)
+
+const usersArr = Array.from(users.values());
+console.log(usersArr);
+
+const keysArr = Array.from(users.keys());
+console.log(keysArr)
