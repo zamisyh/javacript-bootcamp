@@ -7,6 +7,9 @@
 
 const todoList = document.querySelector('.todo-list')
 
+const form = document.getElementById('add-todo-form');
+
+
 const renderList = (doc) =>{
     let li = document.createElement('li')
     li.className = "collection-item";
@@ -40,6 +43,16 @@ const renderList = (doc) =>{
 
     todoList.append(li);
 }
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    db.collection('todos').add({
+        title: form.title.value
+    });
+
+    form.title.value = '';
+})
+
 
 db.collection('todos').orderBy('title').onSnapshot(snapshot => {
     let changes = snapshot.docChanges();
